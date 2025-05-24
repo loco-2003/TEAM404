@@ -1,4 +1,4 @@
-# 🧠 Legal Assistant AI
+# Legal Assistant AI
 
 An intelligent legal assistant that helps users analyze private documents and generate insights about legal risks such as:
 
@@ -8,6 +8,12 @@ An intelligent legal assistant that helps users analyze private documents and ge
 - Unfair Contract Terms  
 
 This tool is designed to assist users in identifying red flags in contracts and other legal texts by answering questions strictly based on the content provided in the uploaded documents.
+
+---
+
+## 📌 Description
+
+Legal Assistant AI is a document analysis tool that uses LangChain, Gemini, FAISS, and Streamlit to detect legal red flags such as misrepresentation of facts, hidden fees, false promises, and unfair contract terms. It answers user queries strictly based on uploaded documents, ensuring context-aware and reliable insights for legal review.
 
 ---
 
@@ -24,10 +30,55 @@ This tool is designed to assist users in identifying red flags in contracts and 
 
 ## ⚙️ Features
 
-- 🔍 **Contextual Document Q&A**: Ask legal questions, get answers strictly from the document.
-- 📄 **Private Document Analysis**: Supports uploading and scanning personal contracts or agreements.
-- 🧠 **LLM-Powered Reasoning**: Uses Gemini's language understanding to identify nuanced risks.
-- ⚖️ **Focus on Legal Red Flags**: Detects legal issues based on four main risk categories.
+- Contextual Document Q&A
+- Private Document Analysis
+- LLM-Powered Reasoning
+- Focus on Legal Red Flags
 
 ---
 
+## 📂 Suggested Folder Structure
+
+```
+legal-assistant-ai/
+├── app.py
+├── qa_pipeline.py
+├── utils.py
+├── faiss_index/
+├── sample_docs/
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+git clone https://github.com/yourusername/legal-assistant-ai.git
+cd legal-assistant-ai
+pip install -r requirements.txt
+export GOOGLE_API_KEY=your_gemini_api_key_here
+streamlit run app.py
+```
+
+---
+
+## 📥 Usage
+
+1. Upload your contract or legal document (PDF or TXT).
+2. Enter your legal question (e.g., "Are there hidden fees?").
+3. Get answers based strictly on your document's content.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. Use, adapt, and distribute with attribution.
+
+---
+
+## 🌐 Live Website
+
+You can explore the Legal Assistant AI web interface here:  
+🔗 [https://suits404.netlify.app](https://suits404.netlify.app)
