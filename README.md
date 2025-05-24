@@ -37,33 +37,6 @@ Legal Assistant AI is a document analysis tool that uses LangChain, Gemini, FAIS
 
 ---
 
-## 📂 Suggested Folder Structure
-
-```
-legal-assistant-ai/
-├── app.py
-├── qa_pipeline.py
-├── utils.py
-├── faiss_index/
-├── sample_docs/
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 🚀 How to Run Locally
-
-```bash
-git clone https://github.com/yourusername/legal-assistant-ai.git
-cd legal-assistant-ai
-pip install -r requirements.txt
-export GOOGLE_API_KEY=your_gemini_api_key_here
-streamlit run app.py
-```
-
----
-
 ## 📥 Usage
 
 1. Upload your contract or legal document (PDF or TXT).
